@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="myAngularApp" ng-controller="appInfoController">
+  <head>
+    <title>{{myApp.name}}</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/stylesheets/styles.css" charset="utf-8">
+    <!-- Angular must be included in the head so that the templates work properly -->
+    <script src="lib/scripts/angular.min.js"></script>
+	  <script src="lib/scripts/app.js"></script>
+	  <script src="lib/scripts/controllers.js"></script>
+	  <script src="lib/scripts/services.js"></script>
+  </head>
+  <body>
+    <header>
+			<h1>{{myApp.name}}</h1>
+			<h2>{{myApp.description}}</h2>
+		</header>
+  </body>
+</html>
