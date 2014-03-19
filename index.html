@@ -7,13 +7,16 @@
     <!-- Angular must be included in the head so that the templates work properly -->
     <script src="lib/scripts/angular.min.js"></script>
 	  <script src="lib/scripts/app.js"></script>
-	  <script src="lib/scripts/controllers.js"></script>
 	  <script src="lib/scripts/services.js"></script>
+	  <script src="lib/scripts/controllers.js"></script>
   </head>
   <body>
     <header>
-			<h1>{{myApp.name}}</h1>
+			<h1>{{video.name}}</h1>
 			<h2>{{myApp.description}}</h2>
 		</header>
+    <div ng-repeat="item in itemsList">
+      {{item.name}}
+    </div>
   </body>
 </html>
