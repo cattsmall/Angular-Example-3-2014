@@ -1,7 +1,7 @@
 <!doctype html>
 <html ng-app="myAngularApp" ng-controller="appInfoController">
   <head>
-    <title>{{myApp.name}}</title>
+    <title>{{myApp.name}} - {{myApp.description}}</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="lib/stylesheets/styles.css" charset="utf-8">
     <!-- Angular must be included in the head so that the templates work properly -->
@@ -11,12 +11,19 @@
 	  <script src="lib/scripts/controllers.js"></script>
   </head>
   <body>
-    <header>
-			<h1>{{video.name}}</h1>
-			<h2>{{myApp.description}}</h2>
-		</header>
-    <div ng-repeat="item in itemsList">
-      {{item.name}}
-    </div>
+    <article>
+      <header>
+  			<h1>{{video.name}}</h1>
+  			<h2>{{video.description}}</h2>
+  		</header>
+      <section class="video-player">
+        <iframe id="player0" class="ng-scope" frameborder="0" allowfullscreen="1" title="YouTube video player" width="898" height="505" src="https://www.youtube.com/embed/-nOMcl_rbgk?wmode=transparent&amp;modestbranding=1&amp;fs=1&amp;showinfo=0&amp;iv_load_policy=3&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;allowScriptAccess=always&amp;allowFullScreen=true&amp;origin=http%3A%2F%2Fwww.networka.com"></iframe>
+      </section>
+    </article>
+    <aside class="related-videos">
+      <div ng-repeat="item in itemsList">
+        {{item.name}}
+      </div>
+    </aside>
   </body>
 </html>
