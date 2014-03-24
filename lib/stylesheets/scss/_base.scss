@@ -1,1 +1,22 @@
 // Base styles that may be modified on a page-by-page basis
+
+.reaction-data {
+  ul {
+    li {
+      button {
+        -webkit-appearance:none;
+        background: $grayD1;
+        color:$white;
+        font-weight:bold;
+        font-size:18px;
+        font-family: "Impact", sans-serif;
+        border:0;
+        padding:10px;
+        
+        &.active {
+          background:$red;
+        }
+      }
+    }
+  }
+}
